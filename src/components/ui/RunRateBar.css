@@ -1,0 +1,118 @@
+.mes-rr {
+  width: 100%;
+}
+
+.mes-rr__top {
+  margin-bottom: var(--sp-2);
+}
+
+.mes-rr__title {
+  font-size: var(--fs-11);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--c-gray);
+}
+
+.mes-rr__row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: var(--sp-2);
+  gap: var(--sp-3);
+}
+
+.mes-rr__k {
+  display: block;
+  font-size: var(--fs-11);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--c-gray-soft);
+  margin-bottom: 2px;
+}
+
+.mes-rr__target strong {
+  font-size: var(--fs-20);
+  color: var(--c-navy);
+}
+
+.mes-rr__actual {
+  text-align: right;
+}
+
+.mes-rr__actual strong {
+  font-size: var(--fs-20);
+  color: var(--c-navy);
+}
+
+.mes-rr__std {
+  font-size: var(--fs-14);
+  color: var(--c-gray-soft);
+  font-weight: 600;
+}
+
+.mes-rr__track {
+  position: relative;
+  display: flex;
+  height: 9px;
+  border-radius: 999px;
+  overflow: visible;
+  margin-top: 14px;
+}
+
+.mes-rr__band {
+  height: 100%;
+}
+.mes-rr__band:first-child {
+  border-top-left-radius: 999px;
+  border-bottom-left-radius: 999px;
+}
+.mes-rr__band:last-child {
+  border-top-right-radius: 999px;
+  border-bottom-right-radius: 999px;
+}
+.mes-rr__band--red {
+  background: #f2696c;
+}
+.mes-rr__band--green {
+  background: #2fc48a;
+}
+.mes-rr__band--yellow {
+  background: #f4c945;
+}
+
+.mes-rr__marker {
+  position: absolute;
+  top: -7px;
+  width: 0;
+  height: 0;
+  transform: translateX(-50%);
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+}
+.mes-rr__marker::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: -1px;
+  width: 2px;
+  height: 15px;
+}
+.mes-rr__marker--green {
+  border-top: 8px solid var(--c-green);
+}
+.mes-rr__marker--green::after {
+  background: var(--c-green);
+}
+.mes-rr__marker--yellow {
+  border-top: 8px solid var(--c-amber);
+}
+.mes-rr__marker--yellow::after {
+  background: var(--c-amber);
+}
+.mes-rr__marker--red {
+  border-top: 8px solid var(--c-red);
+}
+.mes-rr__marker--red::after {
+  background: var(--c-red);
+}

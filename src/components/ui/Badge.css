@@ -1,0 +1,39 @@
+.mes-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: var(--fs-12);
+  font-weight: 600;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+.mes-badge__dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.mes-badge--neutral {
+  background: #eef1f6;
+  color: var(--c-gray);
+}
+.mes-badge--success {
+  background: var(--c-green-tint);
+  color: #12805c;
+}
+.mes-badge--danger {
+  background: var(--c-red-tint);
+  color: #c02b30;
+}
+.mes-badge--warning {
+  background: var(--c-amber-tint);
+  color: #c56a1c;
+}
+.mes-badge--info {
+  background: var(--c-blue-tint);
+  color: var(--c-blue-dark);
+}

@@ -1,0 +1,35 @@
+.qa-alert__lead {
+  margin: 0 0 var(--sp-5);
+  font-size: var(--fs-14);
+  color: var(--c-gray);
+  line-height: 1.6;
+}
+
+.qa-alert__field {
+  margin-bottom: var(--sp-5);
+}
+.qa-alert__field label {
+  display: block;
+  font-size: var(--fs-11);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--c-gray);
+  margin-bottom: 6px;
+}
+.qa-alert__field input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--c-border);
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-16);
+  font-weight: 700;
+  color: var(--c-navy);
+  background: var(--c-card-muted);
+}
+
+.qa-alert__actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-3);
+}

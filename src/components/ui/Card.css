@@ -1,0 +1,68 @@
+.mes-card {
+  background: var(--c-card);
+  border: 1px solid var(--c-border-soft);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.mes-card--muted {
+  background: var(--c-card-muted);
+}
+
+.mes-card__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-3);
+  padding: var(--sp-4) var(--sp-5) var(--sp-3);
+}
+
+.mes-card__title {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  min-width: 0;
+}
+
+.mes-card__title h3 {
+  margin: 0;
+  font-size: var(--fs-13);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--c-navy);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.mes-card__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: var(--radius-sm);
+  background: var(--c-blue-tint);
+  color: var(--c-blue);
+  flex-shrink: 0;
+}
+
+.mes-card__action {
+  flex-shrink: 0;
+}
+
+.mes-card__body {
+  padding: 0 var(--sp-5) var(--sp-5);
+}
+
+.mes-card__head + .mes-card__body {
+  padding-top: 0;
+}
+
+.mes-card__body:only-child {
+  padding: var(--sp-5);
+}

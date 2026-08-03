@@ -1,0 +1,120 @@
+.page3 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-4);
+}
+
+.page3__top {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.8fr) 1.4fr;
+  gap: var(--sp-4);
+  align-items: start;
+}
+
+.page3__output {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-bottom: var(--sp-4);
+  border-bottom: 1px solid var(--c-border-soft);
+  margin-bottom: var(--sp-4);
+}
+.page3__k {
+  font-size: var(--fs-11);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--c-gray-soft);
+}
+.page3__output strong {
+  font-size: var(--fs-28);
+  font-weight: 800;
+  color: var(--c-navy);
+}
+
+.page3__segments {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.page3__seg {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  border: 1px solid var(--c-border-soft);
+  border-radius: var(--radius-sm);
+  background: #fff;
+  cursor: pointer;
+  transition: border-color 0.12s, background 0.12s;
+}
+.page3__seg:hover {
+  border-color: var(--c-border);
+}
+.page3__seg.is-active {
+  border-color: var(--c-red);
+  background: var(--c-red-tint);
+}
+.page3__seg-label {
+  font-size: var(--fs-13);
+  color: var(--c-navy);
+  font-weight: 600;
+}
+.page3__seg-value {
+  font-size: var(--fs-16);
+  font-weight: 800;
+  color: var(--c-red);
+}
+
+.page3__total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: var(--sp-4);
+  padding-top: var(--sp-4);
+  border-top: 1px solid var(--c-border-soft);
+  font-size: var(--fs-13);
+  font-weight: 700;
+  color: var(--c-navy);
+}
+
+.page3__filter select {
+  padding: 7px 12px;
+  border: 1px solid var(--c-border);
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-12);
+  color: var(--c-navy);
+  background: #fff;
+}
+
+.page3__charts {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: var(--sp-4);
+}
+.page3__chart {
+  border: 1px solid var(--c-border-soft);
+  border-radius: var(--radius);
+  padding: var(--sp-3);
+}
+.page3__chart-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: var(--sp-2);
+}
+.page3__chart-head span {
+  font-size: var(--fs-12);
+  font-weight: 600;
+  color: var(--c-navy);
+}
+.page3__chart-head strong {
+  font-size: var(--fs-16);
+  color: var(--c-red);
+}
+
+@media (max-width: 900px) {
+  .page3__top {
+    grid-template-columns: 1fr;
+  }
+}

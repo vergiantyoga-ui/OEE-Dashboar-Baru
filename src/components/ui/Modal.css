@@ -1,0 +1,84 @@
+.mes-modal__backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(11, 36, 71, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--sp-5);
+  z-index: 100;
+  overflow-y: auto;
+}
+
+.mes-modal {
+  background: #fff;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  width: 100%;
+  max-width: 560px;
+  max-height: 92vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.mes-modal--wide {
+  max-width: 920px;
+}
+
+.mes-modal__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--sp-4);
+  padding: var(--sp-5) var(--sp-6);
+  border-bottom: 1px solid var(--c-border-soft);
+}
+
+.mes-modal__title {
+  margin: 0;
+  font-size: var(--fs-20);
+  font-weight: 700;
+  color: var(--c-navy);
+}
+
+.mes-modal__sub {
+  margin: 4px 0 0;
+  font-size: var(--fs-13);
+  color: var(--c-gray);
+}
+
+.mes-modal__head-right {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+}
+
+.mes-modal__close {
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  line-height: 1;
+  color: var(--c-gray);
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: var(--radius-sm);
+}
+.mes-modal__close:hover {
+  background: #f0f2f7;
+}
+
+.mes-modal__body {
+  padding: var(--sp-6);
+  overflow-y: auto;
+}
+
+.mes-modal__foot {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--sp-3);
+  padding: var(--sp-4) var(--sp-6);
+  border-top: 1px solid var(--c-border-soft);
+  background: var(--c-card-muted);
+}

@@ -1,0 +1,93 @@
+.evo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+}
+
+.evo__tabs {
+  display: inline-flex;
+  gap: 4px;
+  padding: 4px;
+  background: var(--c-card-muted);
+  border-radius: var(--radius-sm);
+  align-self: flex-start;
+}
+.evo__tab {
+  border: none;
+  background: transparent;
+  padding: 6px 14px;
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-12);
+  font-weight: 600;
+  color: var(--c-gray);
+  cursor: pointer;
+}
+.evo__tab.is-active {
+  background: var(--c-navy);
+  color: #fff;
+}
+
+.evo__empty {
+  font-size: var(--fs-13);
+  color: var(--c-gray-soft);
+  padding: var(--sp-4);
+  text-align: center;
+  border: 1px dashed var(--c-border-soft);
+  border-radius: var(--radius-sm);
+  margin: 0;
+}
+
+.evo__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.evo__row {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1.2fr auto;
+  align-items: center;
+  gap: var(--sp-3);
+  padding: var(--sp-3) var(--sp-4);
+  border: 1px solid var(--c-border-soft);
+  border-radius: var(--radius-sm);
+}
+
+.evo__cell {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+.evo__cell--action {
+  align-items: flex-end;
+}
+.evo__k {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--c-gray-soft);
+}
+.evo__cell strong {
+  font-size: var(--fs-13);
+  color: var(--c-navy);
+  font-variant-numeric: tabular-nums;
+}
+.evo__reason {
+  font-size: var(--fs-12);
+  color: var(--c-gray);
+  text-align: right;
+}
+
+@media (max-width: 640px) {
+  .evo__row {
+    grid-template-columns: 1fr 1fr;
+    row-gap: var(--sp-3);
+  }
+  .evo__cell--action {
+    align-items: flex-start;
+  }
+}
